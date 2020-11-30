@@ -7,6 +7,9 @@ const geocode = require('./utils/geocode')
 
 //configure express
 const app = express()
+
+const port = process.env.PORT || 3000
+
 const publicDirPath = path.join(__dirname, '../public')
 //Set up views location
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -104,6 +107,6 @@ app.get('*', (req, res) => {
 
 //Start up the server and makes it listen on a given port
 //Arg1 = port, Arg2 = callback
-app.listen(3000, () => {
-    console.log('Server is up');
+app.listen(port, () => {
+    console.log('Server is up on port' + port);
 })
