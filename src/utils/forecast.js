@@ -15,6 +15,9 @@ const forecast = (latitude, longtitude, callback) => {
                 temperature: body.current.temperature,
                 feelslike: body.current.feelslike,
                 icon: body.current.weather_icons[0],
+                windDirection: body.current.wind_dir,
+                windSpeed: body.current.wind_speed,
+                humidity: body.current.humidity
             })
             
         }
