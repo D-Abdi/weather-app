@@ -39,8 +39,9 @@ header a {
     text-decoration: none;
 }
 
-.portrait {
-    width: 500px;
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
 }
 
 #weather-icon {

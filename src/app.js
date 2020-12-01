@@ -40,9 +40,9 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        title: 'Help!',
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+        title: 'Contact',
         name: 'Daniel Abdi',
         tip: 'Remove info after / to return to the homepage'
     })
@@ -89,10 +89,10 @@ app.get('/products', (req, res) => {
     })
 })
 
-app.get('/help/*', (req, res) => {
+app.get('/contact/*', (req, res) => {
     res.render('404', {
         title: '404',
-        error: 'Help page not found'
+        error: 'Contact page not found'
     })
 })
 
