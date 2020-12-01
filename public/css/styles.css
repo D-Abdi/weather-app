@@ -43,6 +43,12 @@ header a {
     width: 500px;
 }
 
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 15px
+}
+
 input {
     border: 1px solid #cccccc;
     border-radius: 5px;

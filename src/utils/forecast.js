@@ -10,9 +10,11 @@ const forecast = (latitude, longtitude, callback) => {
             callback('Unable to access mentioned city. Try another.', undefined)
         } else {
             callback(undefined, {
+                time: body.current.observation_time,
                 weather: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
                 feelslike: body.current.feelslike,
+                icon: body.current.weather_icons[0],
             })
             
         }
